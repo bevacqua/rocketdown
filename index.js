@@ -26,6 +26,6 @@ module.exports = function rocketdown (count, done) {
 };
 
 function sound (number) {
-  var file = path.resolve('./resources', number + '.mp3');
+  var file = path.join(__dirname, 'resources', number + '.mp3');
   play.sound(file);
 }
